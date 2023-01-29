@@ -1,0 +1,33 @@
+td,th {
+    text-align: center;
+    padding: 8px;
+}
+thead {
+    background-color: #f3f3f3;
+    border-radius: 8px 8px 0px 0px;
+  }
+ 
+
+.img-item {
+    display: block;
+    width: 4rem;
+    margin: auto;
+}
+
+table {
+    width: 70%;
+    margin: auto;
+ 
+}
+
+.amount-item {
+    width: 32px;
+    height: 15px;
+    padding:10px;
+}
+
+@media screen and (max-width:280px),screen and(max-height:653px)
+{
+    
+}
+    

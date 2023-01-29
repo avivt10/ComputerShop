@@ -1,0 +1,46 @@
+.product-management-container{
+    background-color: aliceblue;
+    width: 50%;
+    margin: auto;
+    height: auto;
+}
+.close-button-create-product{
+    float: right;
+    background: content-box;
+    border: 1px solid;
+    cursor: pointer;
+}
+.add-product-text{
+    text-align: center;
+    font-weight: 800;
+}
+
+.product-management-container-main{
+    width: 75%;
+    margin: auto;
+    height: auto;
+}
+.inputs-create-product{
+    width: 90%;
+    height: 5px;
+    padding: 15px;  
+}
+.send-button{
+    cursor: pointer;
+    border: none;
+    border-color: #c9c4ff;
+    background-color: #29a6e6;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding: 15px;
+    width: 97%;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .product-management-container{
+    width: 80%;
+    height: 783px;
+    }
+ 
+}
