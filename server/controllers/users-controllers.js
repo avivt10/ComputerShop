@@ -42,7 +42,7 @@ const register = async (req, res, next) => {
   } catch (err) {
     console.log(err);
     const error = new HttpError("Signing up failed, please try again", 500);
-    res.status(500).json({
+    res.status(401).json({
       message:"register failed!"
     })
     return next(error);
@@ -112,8 +112,8 @@ const login = async (req, res, next) => {
    
     else{
       return(
-        res.status(500).json({
-          message:"Llalala! try again"
+        res.status(401).json({
+          message:"Login Failed! try again"
         })
       )
     }
@@ -121,7 +121,7 @@ const login = async (req, res, next) => {
     const error = new HttpError("Login Failed! try again", 500);
     return next(error);
   }
-    res.status(201).json({
+    res.status(200).json({
       id : existUser._id,
       token: token,
       role:existUser.role,
