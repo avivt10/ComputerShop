@@ -45,7 +45,6 @@ const ProductManagement = () =>{
   };
 
   const handleChange = (value: string) => {
-    console.log(value);
     switch (value) {
       case "Highest Price":
         sortedByHeighPrice();
@@ -57,7 +56,7 @@ const ProductManagement = () =>{
         sortedByName();
         break;
       default:
-        console.log("234");
+        
     }
   };
 

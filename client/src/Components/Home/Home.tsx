@@ -35,7 +35,6 @@ const Home = () => {
 
   const handleAddItemToCart = (id: string) => {
     let flag = false;
-    console.log(cart)
     cart?.map((item, index) => {
       if (item.id === id) {
         setCart(

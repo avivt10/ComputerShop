@@ -62,9 +62,6 @@ const addProduct = async (req, res, next) => {
     }
   });
 };
-// git add .
-// git commit -m "initial"
-// git push
 
 const getProducts = async (req, res, next) => {
   try {

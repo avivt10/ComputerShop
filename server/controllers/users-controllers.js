@@ -88,7 +88,6 @@ const login = async (req, res, next) => {
   }
   try {
     if (existUser) {
-      console.log(existUser);
       isEqual = await bcrypt.compare(password, existUser.password);
       if (isEqual) {
          token = await jwt.sign(
